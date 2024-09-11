@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/style-mobile.css">
 
     <title>Document</title>
   </head>
@@ -18,12 +19,12 @@
       <section class="container">
         <section class="container-context">
           <div class="context-intro">
-            <h3 class="context-intro-title">Mortage Calculator</h3>
-            <p class="clear">Clear All</p>
+            <h3 class="context-intro-title">Calculadora de Hipoteca</h3>
+            <p class="clear">Apagar tudo</p>
           </div>
           <div class="container-input">
             <div class="box-input">
-              <h4 class="box-input-title">Mortgage Amount</h4>
+              <h4 class="box-input-title">Valor da hipoteca</h4>
               <div class="text-input-box">
                 <p class="text-input-box-left">R$</p>
                 <input type="number" id="amount" />
@@ -31,14 +32,16 @@
             </div>
             <div class="input-zone">
               <div class="box-input">
-                <h4 class="box-input-title">Mortgage Term</h4>
+                <h4 class="box-input-title">Prazo da hipoteca
+                </h4>
                 <div class="text-input-box">
                   <input type="number" />
                   <p class="text-input-box-right">anos</p>
                 </div>
               </div>
               <div class="box-input">
-                <h4 class="box-input-title">Interest Rate</h4>
+                <h4 class="box-input-title">
+                  Taxa de juros</h4>
                 <div class="text-input-box">
                   <input type="number" />
                   <p class="text-input-box-right">%</p>
@@ -46,28 +49,40 @@
               </div>
             </div>
             <div class="box-input">
-              <h4 class="box-input-title">Mortgage Type</h4>
+              <h4 class="box-input-title">Tipo de hipoteca</h4>
               <form>
                 <div class="type-mortgage-radio">
                   <input type="radio" name="mortgage_type" />
-                  <p>Repayment</p>
+                  <p>Reembolso</p>
                 </div>
                 <div class="type-mortgage-radio">
                   <input type="radio" name="mortgage_type" />
-                  <p>Interest Only</p>
+                  <p>Somente juros</p>
                 </div>
               </form>
             </div>
           </div>
           <div class="btn-container">
             <button>
-              <img src="src/assets/calculate.svg" alt="" />Calculate Repayments
+              <img src="src/assets/calculate.svg" alt="" />Calcular Reembolsos
             </button>
           </div>
         </section>
-        <section class="container-result">
+        <section class="container-result-intro ">
           <div class="result-text">
-            <h3 class="result-title">Your results</h3>
+            <div class="img-intro">
+              <img src="src/assets/img-intro.png" alt="img-intro" />
+            </div>
+            <h3 class="result-title">Os resultados são exibidos aqui</h3>
+            <p class="result-body">
+              Preencha o formulário e clique em "Calcular Reembolsos" para ver
+              quais seriam seus pagamentos mensais.
+            </p>
+          </div>
+        </section>
+        <section class="container-result ">
+          <div class="result-text">
+            <h3 class="result-title">Seu Resultado</h3>
             <p class="result-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               voluptatem eos ipsam explicabo neque odio ullam, alias numquam,
@@ -77,12 +92,12 @@
           </div>
           <div class="payment-result">
             <div class="monthly-payment-result result">
-              <p class="payment-result-text">You monthly repayments</p>
+              <p class="payment-result-text">Seus pagamentos mensais</p>
               <h2 class="payment-installment">$1,797.74</h2>
             </div>
             <hr class="line-result" />
             <div class="full-payment-result result">
-              <p class="payment-result-text">Total you'l repay over the term</p>
+              <p class="payment-result-text">Total que você pagará ao longo do prazo</p>
               <h3 class="full-payment">$539,322.94</h3>
             </div>
           </div>

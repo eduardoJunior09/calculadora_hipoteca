@@ -10,7 +10,7 @@
   --primary-color: #12303f;
   --second-color: #0e2532;
   --flashy-color: #d9db32;
-  --flashy-color-hover:rgb(179, 182, 29);
+  --flashy-color-hover: rgb(179, 182, 29);
   --background: #e3f4fc;
   --font-color: #41484b;
   --white: #ffffff;
@@ -179,15 +179,41 @@ form {
   background-color: var(--flashy-color);
 }
 
-.container-result {
+.container-result-intro, .container-result {
   display: flex;
   align-items: center;
-  justify-content: top;
   flex-direction: column;
   padding: var(--size-xxl-px);
   background-color: var(--primary-color);
   border-radius: 0 var(--size-md-px) var(--size-md-px) var(--size-50-px);
   color: var(--white);
+}
+
+.container-result-intro {
+  justify-content: center;
+  text-align: center;
+}
+
+.container-result {
+  justify-content: top;
+}
+
+.disable{
+  display: none;
+}
+
+.img-intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--size-xl-px);
+}
+
+.img-intro img{
+  width: 50%;
+  object-fit: cover;
 }
 
 .result-text .result-title {
@@ -228,7 +254,6 @@ form {
 .line-result {
   margin: var(--size-lg-px) 0;
 }
-
 
 /* Interação */
 
